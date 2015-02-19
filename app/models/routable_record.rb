@@ -66,7 +66,7 @@ class RoutableRecord < ActiveRecord::Base
   include Rails.application.routes.url_helpers
 
   after_save :reload_routes
-  before_save :populate_name
+  #before_save :populate_name
 
   def route_name_prefix
     "#{route_model.pluralize}"
